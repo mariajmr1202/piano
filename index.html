@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Piano</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>My Piano</h1>
+        <h3 class="nivel">Nivel: <span id="nivel">1</span></h3>
+      </header>
+      <section class="piano">
+        <div id="notaDo" class="nota sostenida" data-nota="notaDo"></div>
+        <div id="notaDoBml" class="nota do bemol" data-nota="notaDoBml"></div>
+        <div id="notaRe" class="nota sostenida" data-nota="notaRe"></div>
+        <div id="notaReBml" class="nota re bemol" data-nota="notaReBml"></div>
+        <div id="notaMi" class="nota sostenida" data-nota="notaMi"></div>
+        <div id="notaFa" class="nota sostenida" data-nota="notaFa"></div>
+        <div id="notaFaBml" class="nota fa bemol" data-nota="notaFaBml"></div>
+        <div id="notaSol" class="nota sostenida" data-nota="notaSol"></div>
+        <div
+          id="notaSolBml"
+          class="nota sol bemol"
+          data-nota="notaSolBml"
+        ></div>
+        <div id="notaLa" class="nota sostenida" data-nota="notaLa"></div>
+        <div id="notaLaBml" class="nota la bemol" data-nota="notaLaBml"></div>
+        <div id="notaSi" class="nota sostenida" data-nota="notaSi"></div>
+        <audio id="sound-do" src="./sounds/sound_do.wav"></audio>
+        <audio id="sound-re" src="./sounds/sound_re.wav"></audio>
+        <audio id="sound-mi" src="./sounds/sound_mi.wav"></audio>
+        <audio id="sound-fa" src="./sounds/sound_fa.wav"></audio>
+        <audio id="sound-sol" src="./sounds/sound_sol.wav"></audio>
+        <audio id="sound-la" src="./sounds/sound_la.wav"></audio>
+        <audio id="sound-si" src="./sounds/sound_si.wav"></audio>
+        <audio id="sound-dob" src="./sounds/sound_dob.wav"></audio>
+        <audio id="sound-reb" src="./sounds/sound_reb.wav"></audio>
+        <audio id="sound-fab" src="./sounds/sound_fab.wav"></audio>
+        <audio id="sound-solb" src="./sounds/sound_solb.wav"></audio>
+        <audio id="sound-lab" src="./sounds/sound_lab.wav"></audio>
+      </section>
+      <section id="start" class="start">
+        <button class="btn" onclick="empezarJuego()">Play</button>
+      </section>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="./script.js"></script>
+</html>
